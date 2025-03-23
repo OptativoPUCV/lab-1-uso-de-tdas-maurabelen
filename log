@@ -217,3 +217,15 @@ exercises.c:103:24: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 8627077
+Sat, Mar 22, 2025 10:41:23 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'copia_pila':
+exercises.c:97:19: error: implicit declaration of function 'crea_pila'; did you mean 'copia_pila'? [-Wimplicit-function-declaration]
+   97 | Stack* pila_Aux = crea_pila();
+      |                   ^~~~~~~~~
+      |                   copia_pila
+exercises.c:97:19: error: initialization of 'Stack *' {aka 'List *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+Compilation failed
+b4e013d
