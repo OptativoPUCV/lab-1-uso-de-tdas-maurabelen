@@ -198,3 +198,22 @@ stack.h:11:31: note: expected 'void *' but argument is of type 'int'
 cc1.exe: all warnings being treated as errors
 Compilation failed
 543720f
+Sat, Mar 22, 2025 10:39:07 PM: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'copia_pila':
+exercises.c:97:19: error: implicit declaration of function 'crea_pila'; did you mean 'copia_pila'? [-Wimplicit-function-declaration]
+   97 | Stack* pila_Aux = crea_pila();
+      |                   ^~~~~~~~~
+      |                   copia_pila
+exercises.c:97:19: error: initialization of 'Stack *' {aka 'List *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+exercises.c:98:18: error: comparison between pointer and integer [-Werror]
+   98 |    while(top(P1) != -1){
+      |                  ^~
+exercises.c:103:24: error: comparison between pointer and integer [-Werror]
+  103 |    while(top(pila_Aux) != -1){
+      |                        ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+8627077
