@@ -229,3 +229,9 @@ exercises.c:97:19: error: implicit declaration of function 'crea_pila'; did you 
 exercises.c:97:19: error: initialization of 'Stack *' {aka 'List *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
 Compilation failed
 b4e013d
+Sat, Mar 22, 2025 10:41:58 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|1
+total_score: 50/70
+bfd017e
