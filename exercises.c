@@ -76,7 +76,14 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
+   int* aux = first(L);
+   while(aux != NULL){
+      if(*aux == elem){
+         popCurrent(L);
+      }
+      aux = next(L);
 
+   }
 }
 
 /*
@@ -87,6 +94,7 @@ Puedes usar una pila auxiliar.
 */
 
 void copia_pila(Stack* P1, Stack* P2) {
+
 }
 
 /*
